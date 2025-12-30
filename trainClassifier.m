@@ -102,7 +102,7 @@ partitionedModel = crossval(trainedClassifier.ClassificationNeuralNetwork, 'KFol
 validationAccuracy = 1 - kfoldLoss(partitionedModel, 'LossFun', 'ClassifError');
 
 
-%GFF Loss ???
+%GFF Loss 
 kfoldLoss(partitionedModel, 'LossFun', 'ClassifError');
 % Display the validation accuracy
 fprintf('Validation Accuracy: %.2f%%\n', validationAccuracy * 100);
